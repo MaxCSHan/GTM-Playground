@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-T9JL5SRN",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");</script><title>GTM Training Demo Site</title><meta charset="UTF-8"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><link rel="stylesheet" href="/csb-6n63mj/styles.ecbd7e1f.css"></head><body>  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9JL5SRN" height="0" width="0" style="display:none;visibility:hidden;"></iframe></noscript>  <div id="app"> <div class="article-block"> <h1>GTM Training Demo</h1> <div> This is a tutorial template for GTM training. Click <a href="https://tagmanager.google.com/#/home" target="_blank" rel="noopener noreferrer">here</a> to learn more. </div> </div> <div class="article-block"> <h2>Google Tag Manager とは？</h2> <div> Google Tag Manager は、Google による無料のタグ管理ツールです。このツールを使用すると、ウェブサイトに手動でコードを追加する必要なく、タグを簡単にデプロイおよび管理できます。タグは、ウェブサイトのさまざまなユーザーアクションをトラッキングするコードスニペットです。 </div> </div> <div class="article-block"> <h2>GTM コンテナコードのインストール</h2> <div> <div> 最初のコードブロックは、ウェブページの &lt;head&gt; 開始タグの直後、または &lt;head&gt; のできる限り最初の方に配置することをおすすめします。 <div class="code-block header-block"> <button class="copy-btn"> <i class="fa-copy far"></i> </button> <pre>
+                <code description="Headのコード">
+      &lt;!-- Google Tag Manager --&gt;
+      &lt;script&gt;
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != "dataLayer" ? "&amp;l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, "script", "dataLayer", "GTM-T9JL5SRN");
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+                </code>               
+              </pre> </div> </div> <div> 次に、ウェブサイトのすべてのページで、&lt;body&gt; 開始要素の直後に次のコードを追加します。 <div class="body-block code-block"> <button class="copy-btn"> <i class="fa-copy far"></i> </button> <pre>
+                <code description="Bodyのコード">
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+    &lt;noscript&gt;
+      &lt;iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T9JL5SRN"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      &gt;&lt;/iframe&gt;
+    &lt;/noscript&gt;
+    &lt;!-- End Google Tag Manager (noscript) --&gt;
+                </code>
+              </pre> </div> 上記のインストール方法はウェブサイト開発者の協力が必要です。​ </div> </div> </div> <div class="article-block"> <h2>Google Tag Manager実装の確認</h2> <div>実装完了の後、ここのボタンを推して、実装を確認します。</div> <div> <button class="detect-btn">Detect</button> </div> </div> <script type="module" src="/csb-6n63mj/src.d1ba4aee.js"></script> </div> </body></html>
